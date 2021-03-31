@@ -2,10 +2,6 @@ import { Cliente } from "./Cliente.js";
 
 export class ContaCorrente{
     static numeroDeContas = 0;
-    agencia;
-    
-    _cliente;
-    _saldo = 0; // convenção atributo privado
 
     get saldo(){
         return this._saldo;
@@ -25,6 +21,7 @@ export class ContaCorrente{
     constructor(cliente, agencia){
         this.agencia = agencia;
         this.cliente = cliente;
+        this._saldo = 0;
         ContaCorrente.numeroDeContas += 1;
     }
 
