@@ -10,19 +10,14 @@ cliente2.nome = "Raquel";
 cliente2.cpf = 88823233309;
 
 const contaCorrenteArtur = new ContaCorrente();
-
 contaCorrenteArtur.agencia = 1001;
+contaCorrenteArtur.cliente = cliente1;
 
-contaCorrenteArtur.depositar(100);
-contaCorrenteArtur.depositar(200);
-contaCorrenteArtur.depositar(-1);
-
-
-let valorSacado = contaCorrenteArtur.sacar(150);
+const contaCorrenteRaquel = new ContaCorrente();
+contaCorrenteRaquel.agencia = 1002;
+contaCorrenteRaquel.cliente = cliente2;
 
 
-console.log(cliente1);
-console.log(cliente2);
 console.log(contaCorrenteArtur);
-console.log(valorSacado);
+console.log(contaCorrenteRaquel);
 
