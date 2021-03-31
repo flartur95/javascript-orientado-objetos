@@ -12,10 +12,13 @@ cliente2.cpf = 88823233309;
 const contaCorrenteArtur = new ContaCorrente();
 contaCorrenteArtur.agencia = 1001;
 contaCorrenteArtur.cliente = cliente1;
+contaCorrenteArtur.depositar(500);
 
 const contaCorrenteRaquel = new ContaCorrente();
 contaCorrenteRaquel.agencia = 1002;
 contaCorrenteRaquel.cliente = cliente2;
+
+contaCorrenteArtur.transferir(200, contaCorrenteRaquel);
 
 
 console.log(contaCorrenteArtur);
