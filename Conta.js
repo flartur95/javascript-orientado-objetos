@@ -2,10 +2,12 @@ export class Conta {
     constructor(saldoInicial, cliente, agencia){
         this._saldo = saldoInicial;
         this._cliente = cliente;
-        this.agencia = agencia;
+        this._agencia = agencia;
+ 
     }
 
     sacar(valor){
+
         if(this._saldo >= valor){
             this._saldo -= valor; // mesma coisa que this.saldo = this.saldo - valor
             return valor;
