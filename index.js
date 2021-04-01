@@ -12,6 +12,9 @@ const contaPoupanca = new ContaPoupanca(50, cliente1, 1001);
 contaCorrenteArtur.depositar(500);
 contaCorrenteArtur.sacar(100);
 
+contaPoupanca.depositar(500);
+contaPoupanca.sacar(100);
+
 console.log(contaCorrenteArtur);
 console.log(contaPoupanca);
 
