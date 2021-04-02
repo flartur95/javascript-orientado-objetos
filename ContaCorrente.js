@@ -1,4 +1,3 @@
-import { Cliente } from "./Cliente.js";
 import { Conta } from "./Conta.js";
 
 export class ContaCorrente extends Conta{
@@ -9,13 +8,10 @@ export class ContaCorrente extends Conta{
         ContaCorrente.numeroDeContas += 1;
     }
 
+    //sobrescrevendo o comportamento de sacar
     sacar(valor){
         let taxa = 1.1;
-        valor = taxa * valor;
-        if(this._saldo >= valor){
-            this._saldo -= valor; // mesma coisa que this.saldo = this.saldo - valor
-            return valor;
-        }
+        return this._sacar(valor, taxa);
     }
 
 }
