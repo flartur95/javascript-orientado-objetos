@@ -11,8 +11,8 @@ const contaCorrenteArtur = new ContaCorrente(cliente1, 1001);
 const contaPoupanca = new ContaPoupanca(50, cliente1, 1001);
 
 const contaSalario =  new ContaSalario(cliente1);
-contaSalario.depositar(110);
-contaSalario.sacar(100);
+contaSalario.depositar(110.00);
+contaSalario.sacar(100.00);
 
 console.log(contaSalario);
 
